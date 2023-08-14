@@ -1,0 +1,241 @@
+body{
+    text-align: center;
+    font-family: Bebas Neue Pro, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.nav{
+    width: 75%;
+    margin: auto;
+    border-bottom: solid black 2px;
+}
+
+.footer{
+    width: 75%;
+    border-top: solid black 2px;
+    position:absolute;
+    bottom: 0;
+    left: 12.5%;
+    font-style: normal;
+}
+
+.title{
+    color: blue;
+    text-align: left;
+}
+
+
+/**********************Main Page*******************************/
+.mainpage{
+    width: 75%;
+    margin: auto;
+}
+
+.form{
+    margin: 20%;
+}
+
+.box{
+    width: 75%;
+    height: 45px;
+    border-radius: 25px;
+}
+
+input[type='text'] {
+    padding-left: 25px;  
+    font-size: 1.2em;  
+}
+
+.button{
+    margin-top: 25px;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    background-color:cornflowerblue;
+    color: white;
+}
+
+
+/**********************Result Page*******************************/
+.mainbox{
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+.topbox{
+    position: relative;
+    height: 150px;    
+}
+
+.divider{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.lowerbox{
+    height: 150px;
+}
+
+.tempbox{
+    width: 25%;
+    height: 75px;
+    position: absolute;
+    top: 5px;
+    left: 10%;
+}
+
+.infobox{
+    position: absolute;
+    top: 10px;
+    right: 10%;
+}
+
+.bgimg{
+    width: 120px;
+    height: 120px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    margin-top: 7.5%;
+}
+
+.weather{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.temp{
+    font-size: 50px;    
+}
+
+.maxmintemp{
+    padding-top: 20px;
+}
+
+
+/**********************Error Page*******************************/
+.error{
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+.err404{
+    margin: 0;
+    font-size: 250px;
+    color: cornflowerblue;
+}
+
+.description{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.errbox{
+    width: 80%;
+    margin: auto;
+    border-bottom: solid black 2px;
+}
+
+.backbutton{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 40px;
+    margin-top: 0;
+}
+
+
+/************************Media Queries***************************/
+@media(min-width : 150px) and (max-width :900px){
+    /*****general*******/
+    .footer{
+        position: sticky;
+        bottom: 0;
+    }
+
+
+    /******mainpage******/
+    .mainpage{
+        width: 95%;
+    }
+
+    .box{
+        width: 90%;
+        height: 45px;
+        border-radius: 25px;
+    }
+
+    .form{
+        margin: 10%;
+    }
+
+
+    /*********results***********/
+    .mainbox{
+        width: 90%;
+    }
+
+    .topbox{
+        height: 200px;
+    }
+
+    .tempbox{
+        position: static;
+        margin: auto;
+        width: 250px;
+    }
+
+    .infobox{
+        position: static;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .temp{
+        font-size: 50px;
+        margin-top: 0;
+        padding-top: 15px;
+    }
+
+
+    /*********error*********/
+    .error{
+        width: 80%;
+        margin: 10%;
+    }
+
+    .err404{
+        font-size: 50px
+    }
+
+    .backbutton{
+        width: 90%;
+        margin: 10px;
+    }
+
+}
