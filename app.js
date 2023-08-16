@@ -25,7 +25,7 @@ app.post('/',function(req,res){
             /*****Checking status****/
             const check = info.cod;
 
-            if(check === '404'){
+            if(check >= 400){
                 res.render('error.ejs');
             }else{
                     /***Informartion***/
