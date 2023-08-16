@@ -14,7 +14,7 @@ body{
 .footer{
     width: 75%;
     border-top: solid black 2px;
-    position:sticky;
+    position: absolute;
     bottom: 0;
     left: 12.5%;
     font-style: normal;
@@ -45,6 +45,11 @@ body{
 input[type='text'] {
     padding-left: 25px;  
     font-size: 1.2em;  
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: solid 2px cornflowerblue;
 }
 
 .button{
@@ -172,8 +177,9 @@ input[type='text'] {
 @media(min-width : 150px) and (max-width :900px){
     /*****general*******/
     .footer{
-        position: sticky;
+        position: static;
         bottom: 0;
+        margin: auto;
     }
 
 
@@ -196,6 +202,7 @@ input[type='text'] {
     /*********results***********/
     .mainbox{
         width: 90%;
+        margin: 5% auto;
     }
 
     .topbox{
@@ -238,4 +245,12 @@ input[type='text'] {
         margin: 10px;
     }
 
+}
+
+@media(min-width : 901px) and (max-width : 1280px){
+    .footer{
+        position: static;
+        bottom: 0;
+        margin: auto;
+    }
 }
