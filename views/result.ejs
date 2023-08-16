@@ -1,0 +1,31 @@
+<%-include('header.ejs');-%>
+
+    <div class="mainbox">
+
+        <div class="topbox"> 
+            <div class="tempbox">
+                <p class="temp"><%= temp %>°c</p>
+            </div>
+            <div class="infobox">
+                <p class="weather"><%= weather %></p>
+                <p class="location"><%= location %></p>
+                <p class="time"><%= time %></p>
+            </div>
+        </div>
+        
+        <div class="divider">
+            <div class="bgimg">
+                <img class="image" src="<%= image %>">
+            </div>
+            <p class="description"><%= description %></p>
+        </div>
+            
+        <div class="lowerbox">
+            <p class="maxmintemp">Max/Min = <%= maxtemp %>°c / <%= mintemp %>°c</p>
+            <p class="feeltemp">Feels like = <%= feeltemp %>°c</p>
+            <p class="humidity">Humidity = <%= humidity %> % </p>
+        </div>
+        
+    </div>
+
+<%-include('footer.ejs');-%>
